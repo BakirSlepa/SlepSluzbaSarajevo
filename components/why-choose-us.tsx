@@ -14,13 +14,13 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-20 px-6 bg-blue-100 dark:bg-gray-800">
+    <section id="why-choose-us" className="py-20 px-6 bg-yellow-500 dark:bg-gray-800">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-blue-800 dark:text-white">Zašto izabrati nas?</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-black dark:text-white">Zašto izabrati nas?</h2>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <Image
-              src="/gallery-img11.webp"
+              src="/mer4.webp"
               alt="Šleper u akciji"
               width={600}
               height={400}

@@ -6,22 +6,22 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 const images = [
-  { src: "/gallery-img1.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img12.jpg", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img2.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img4.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img13.jpg", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img5.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img6.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img14.jpg", alt: "Šlepanje auta po danu" },
-  { src: "/main-img.webp", alt: "Šleper" },
-  { src: "/gallery-img7.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img15.jpg", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img8.webp", alt: "Šlepanje auta po noći" },
-  { src: "/gallery-img9.webp", alt: "Šlepanje auta po noći" },
-  { src: "/gallery-img16.jpg", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img10.webp", alt: "Šlepanje auta po danu" },
-  { src: "/gallery-img11.webp", alt: "Šlepanje auta po danu" },
+  { src: "/mer1.webp", alt: "Šlepanje auta po danu" },
+  { src: "/mer2.jpg", alt: "Šlepanje auta po danu" },
+  { src: "/mer3.webp", alt: "Šlepanje auta po danu" },
+  { src: "/mer4.webp", alt: "Šlepanje auta po danu" },
+  { src: "/mer5.webp", alt: "Šlepanje auta po danu" },
+  { src: "/mer6.webp", alt: "Šlepanje auta po danu" },
+  // { src: "/gallery-img6.webp", alt: "Šlepanje auta po danu" },
+  //{ src: "/gallery-img14.jpg", alt: "Šlepanje auta po danu" },
+  //{ src: "/main-img.webp", alt: "Šleper" },
+  //{ src: "/gallery-img7.webp", alt: "Šlepanje auta po danu" },
+  //{ src: "/gallery-img15.jpg", alt: "Šlepanje auta po danu" },
+  //{ src: "/gallery-img8.webp", alt: "Šlepanje auta po noći" },
+  //{ src: "/gallery-img9.webp", alt: "Šlepanje auta po noći" },
+  //{ src: "/gallery-img16.jpg", alt: "Šlepanje auta po danu" },
+  //{ src: "/gallery-img10.webp", alt: "Šlepanje auta po danu" },
+  //{ src: "/gallery-img11.webp", alt: "Šlepanje auta po danu" },
 ];
 
 export default function Gallery() {
@@ -39,9 +39,9 @@ export default function Gallery() {
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <section className="pt-20 pb-20 px-6 bg-blue-100 dark:bg-gray-800">
+    <section className="pt-20 pb-20 px-6 bg-yellow-500 dark:bg-gray-800">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-blue-800 dark:text-white">Galerija</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-black dark:text-white">Galerija</h2>
         
         {/* Image Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

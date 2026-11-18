@@ -89,13 +89,13 @@ export default function KontaktForma() {
   );
 
   return (
-    <section id="contact" className="py-20 px-6 bg-white dark:bg-gray-900">
+    <section id="contact" className="py-20 px-6 bg-black dark:bg-gray-900">
       <div className="container mx-auto max-w-2xl">
-        <h2 className="text-3xl font-bold text-center mb-8 text-blue-800 dark:text-white">Kontaktirajte nas</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-yellow-500 dark:text-white">Kontaktirajte nas</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="name" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
                 Ime
               </label>
               <Input
@@ -109,7 +109,7 @@ export default function KontaktForma() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
                 Email
               </label>
               <Input
@@ -124,7 +124,7 @@ export default function KontaktForma() {
             </div>
           </div>
           <div>
-            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
               Telefon
             </label>
             <Input
@@ -138,7 +138,7 @@ export default function KontaktForma() {
             />
           </div>
           <div>
-            <label htmlFor="serviceType" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label htmlFor="serviceType" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
               Vrsta usluge
             </label>
             <Select onValueChange={handleSelectChange} name="serviceType">
@@ -154,7 +154,7 @@ export default function KontaktForma() {
             </Select>
           </div>
           <div>
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
               Poruka
             </label>
             <Textarea
@@ -166,7 +166,7 @@ export default function KontaktForma() {
               className="dark:bg-gray-700 dark:text-white dark:border-gray-600"
             />
           </div>
-          <Button type="submit" className="w-full dark:bg-blue-700 dark:hover:bg-blue-600">
+          <Button type="submit" className="w-full bg-yellow-500 text-black hover:bg-yellow-300 dark:bg-blue-700 dark:hover:bg-blue-600">
             {buttonStatus}
           </Button>
         </form>

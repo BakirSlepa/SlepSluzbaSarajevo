@@ -38,20 +38,20 @@ const pricingPackages = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="pt-20 pb-20 px-6 bg-white dark:bg-gray-900">
+    <section id="pricing" className="pt-20 pb-20 px-6 bg-black dark:bg-gray-900">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-blue-800 dark:text-white">
+        <h2 className="text-3xl font-bold text-center mb-12 text-yellow-500 dark:text-white">
           Cjenovnik
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pricingPackages.map((pkg, index) => (
             <Card
               key={index}
-              className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+              className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-yellow-500 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
             >
               <CardHeader>
                 <CardTitle className="text-xl mb-1">{pkg.title}</CardTitle>
-                <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">{pkg.price}</p>
+                <p className="text-3xl font-bold text-red-600 dark:text-blue-400">{pkg.price}</p>
                 <CardDescription className="mt-2">{pkg.description}</CardDescription>
               </CardHeader>
               <CardContent className="mt-4 space-y-2">

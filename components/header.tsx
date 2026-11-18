@@ -34,7 +34,7 @@ export default function Header() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <header className="bg-blue-700 dark:bg-gray-800 text-white py-3 px-4 md:px-8 sticky top-0 z-20 shadow-xl shadow-blue-800/50 dark:shadow-gray-900/50">
+    <header className="bg-black dark:bg-gray-800 text-white py-3 px-4 md:px-8 sticky top-0 z-20 shadow-xl shadow-yellow-500/50 dark:shadow-gray-900/50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-3">
                     <Image 
@@ -53,7 +53,7 @@ export default function Header() {
             <li>
               <Link
                 href="#services"
-                className="inline-block py-2 px-6 rounded-full bg-blue-800 hover:bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                className="inline-block py-2 px-6 rounded-full bg-yellow-600 hover:bg-yellow-300 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-black"
               >
                 Usluge
               </Link>
@@ -61,7 +61,7 @@ export default function Header() {
             <li>
               <Link
                 href="#why-choose-us"
-                className="inline-block py-2 px-6 rounded-full bg-blue-800 hover:bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                className="inline-block py-2 px-6 rounded-full bg-yellow-600 hover:bg-yellow-300 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-black"
               >
                 Zašto nas izabrati
               </Link>
@@ -69,7 +69,7 @@ export default function Header() {
             <li>
               <Link
                 href="#pricing"
-                className="inline-block py-2 px-6 rounded-full bg-blue-800 hover:bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                className="inline-block py-2 px-6 rounded-full bg-yellow-600 hover:bg-yellow-300 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-black"
               >
                 Cjenovnik
               </Link>
@@ -77,7 +77,7 @@ export default function Header() {
             <li>
               <Link
                 href="#contact"
-                className="inline-block py-2 px-6 rounded-full bg-blue-800 hover:bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+                className="inline-block py-2 px-6 rounded-full bg-yellow-600 hover:bg-yellow-300 dark:bg-gray-700 dark:hover:bg-gray-500 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-black"
               >
                 Kontakt
               </Link>
@@ -86,7 +86,8 @@ export default function Header() {
 
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-blue-800 hover:bg-blue-600 dark:bg-gray-700 dark:hover:bg-gray-500 transition-colors duration-200"
+            className="p-2 rounded-full bg-yellow-600 hover:bg-yellow-300
+     dark:bg-gray-700 dark:hover:bg-gray-500 transition-colors duration-200"
           >
             {isDarkMode ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} />}
           </button>

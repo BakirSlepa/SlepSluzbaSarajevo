@@ -18,7 +18,7 @@ const TowTruckAnimation = () => {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed inset-0 z-50 bg-blue-600 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-yellow-500 flex items-center justify-center"
           initial={{ opacity: 1.5 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}

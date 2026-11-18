@@ -33,7 +33,7 @@ export default function Hero() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section className="bg-blue-700 dark:bg-gray-800 text-white py-20 px-6">
+    <section className="bg-yellow-500 dark:bg-gray-800 text-black py-20 px-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Brza i pouzdana vučna služba</h1>
@@ -43,25 +43,19 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              className="bg-white dark:bg-blue-500 text-blue-700 dark:text-white hover:bg-blue-100 dark:hover:bg-blue-600"
+              className="bg-white dark:bg-blue-500 text-black dark:text-white hover:bg-blue-100 dark:hover:bg-blue-600"
               onClick={openModal}
             >
               <PhoneCall className="mr-2" />
               Pozovite odmah
             </Button>
 
-            <Link
-              href="#usluge"
-              className="inline-flex items-center justify-center py-2 px-6 rounded-full bg-blue-800 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-gray-600 transition-colors duration-200"
-            >
-              Saznaj više
-              <ArrowRight className="ml-2" />
-            </Link>
+            
           </div>
         </div>
         <div className="md:w-1/2">
           <Image
-            src="/main-img.webp"
+            src="/mer6.webp"
             alt="Naš šleper"
             width={600}
             height={400}
@@ -103,7 +97,7 @@ export default function Hero() {
               </h2>
               <a
                 href="tel:+38762223225"
-                className="text-xl text-blue-700 hover:underline text-center block mb-6"
+                className="text-xl text-black hover:underline text-center block mb-6"
                 onClick={closeModal}
               >
                 +387 62 223 225
